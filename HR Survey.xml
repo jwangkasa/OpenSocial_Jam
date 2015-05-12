@@ -121,15 +121,15 @@
              <br/>
               Importance: Below Market Average
 
-              <input type="radio" name="caseRating" value="0">
+              <input type="radio" name="compRating" value="0">
 
-              <input type="radio" name="caseRating" value="1">
+              <input type="radio" name="compRating" value="1">
 
-              <input type="radio" name="caseRating" value="2">
+              <input type="radio" name="compRating" value="2">
 
-              <input type="radio" name="caseRating" value="3">
+              <input type="radio" name="compRating" value="3">
 
-              <input type="radio" name="caseRating" value="4"> Above Market Average
+              <input type="radio" name="compRating" value="4"> Above Market Average
 
 <br/>
 <br/>
@@ -137,15 +137,15 @@
              <br/>
               Importance: Not effective
 
-              <input type="radio" name="caseRating" value="0">
+              <input type="radio" name="learnRating" value="0">
 
-              <input type="radio" name="caseRating" value="1">
+              <input type="radio" name="learnRating" value="1">
 
-              <input type="radio" name="caseRating" value="2">
+              <input type="radio" name="learnRating" value="2">
 
-              <input type="radio" name="caseRating" value="3">
+              <input type="radio" name="learnRating" value="3">
 
-              <input type="radio" name="caseRating" value="4"> Very effective
+              <input type="radio" name="learnRating" value="4"> Very effective
 
 
             </div>
