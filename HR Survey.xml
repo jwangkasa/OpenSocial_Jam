@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Module>
+
+    <ModulePrefs title="HR Survey" height="600">
+
+        <Require feature="osapi"/>
+
+        <Require feature="minimessage"/>
+
+    </ModulePrefs>
+
+    <Content type="html">
+
+        <![CDATA[
+
+      <script type="text/javascript">
+
+        function save(){
+
+          var emp_status=document.getElementsByName('caseInput')[0].value;
+
+          var division=document.getElementsByName('divisionInput'[0]).value;
+
+          var comment=document.getElementsByName('comments')[0].value;
+
+          var specKnowledge=document.getElementsByName('phoneInput')[0].value;
+
+          var saveMessage = new gadgets.MiniMessage(__MODULE_ID__);
+
+          saveMessage.createDismissibleMessage("Your Survey has been submitted");
+
+        }
+
+        function init() {
+
+          osapi.people.getViewer().execute(function(viewerData) {
+
+            if (!viewerData.error) {
+
+              var viewerDiv = document.getElementById('current_user_id');
+
+              viewerDiv.innerHTML = viewerData.displayName;
+
+            };
+
+          });
+
+        }
+
+        gadgets.util.registerOnLoadHandler(init);
+
+      </script>
+
+
+
+      <style type="text/css">
+
+        label { display: inline-block; width: 200px; }
+
+        select { display: inline-block; width: 200px; }
+
+      </style>
+
+
+
+      <div id="content">
+
+        <div id="greeting"><h1> Hello <span id="current_user_id"> </span></h1>
+        <br/>
+        Please help to complete the below survey!
+        <br/>
+        </div>
+
+
+
+        <div id="editForm">
+
+                                                                              <br>
+
+          <form action="#">
+
+            <div id="emp_status">
+
+              <label>What is your employment status: </label>
+
+              <select name="caseInput" size="1">
+
+                <option> Full-Time Permanent Staff</option>
+
+                <option> Part-Time Permanent Staff </option>
+
+                <option> Contractor</option>
+
+                <option> Advisor</option>
+
+                <option> Hourly Staff</option>
+
+              </select>
+
+              &&nbsp;
+             <br/>
+             <br/>
+             Q1. How satisfy are you with your current workload?
+             <br/>
+              Importance: Low
+
+              <input type="radio" name="caseRating" value="0">
+
+              <input type="radio" name="caseRating" value="1">
+
+              <input type="radio" name="caseRating" value="2">
+
+              <input type="radio" name="caseRating" value="3">
+
+              <input type="radio" name="caseRating" value="4"> High
+
+             <br/>
+             <br/>
+             Q2. How do you rate your current compensation?
+             <br/>
+              Importance: Below Market Average
+
+              <input type="radio" name="caseRating" value="0">
+
+              <input type="radio" name="caseRating" value="1">
+
+              <input type="radio" name="caseRating" value="2">
+
+              <input type="radio" name="caseRating" value="3">
+
+              <input type="radio" name="caseRating" value="4"> Above Market Average
+
+<br/>
+<br/>
+             Q3. How effective is the learning provided by organization in performing your job?
+             <br/>
+              Importance: Not effective
+
+              <input type="radio" name="caseRating" value="0">
+
+              <input type="radio" name="caseRating" value="1">
+
+              <input type="radio" name="caseRating" value="2">
+
+              <input type="radio" name="caseRating" value="3">
+
+              <input type="radio" name="caseRating" value="4"> Very effective
+
+
+            </div>
+
+
+            <br>
+
+            <div id="division">
+
+              <label>Division: </label>
+
+              <select name="divisionInput" size="1">
+
+                <option> Human Resource</option>
+
+                <option> Sales</option>
+
+                <option> Finance</option>
+
+                <option> Manufacturing</option>
+
+                <option> Others</option>
+
+              </select>
+
+                &&nbsp;
+
+              Importance: Low
+
+              <input type="radio" name="divisionRating" value="0">
+
+              <input type="radio" name="divisionRating" value="1">
+
+              <input type="radio" name="divisionRating" value="2">
+
+              <input type="radio" name="divisionRating" value="3">
+
+              <input type="radio" name="divisionRating" value="4"> High
+
+            </div>
+
+            <br>
+
+            <div id="comments">
+
+              <label>Comments: </label>
+
+              <input type="textarea" name="comments" size="50">
+
+            </div>
+
+            <br>
+
+            <div id="specialist knowledge">
+
+              <label>Phone Number:</label>
+
+              <input type="text" name="phoneInput" size="50">
+
+            </div>
+
+            <br>
+
+            <br>
+
+            <input type="button" value="Save" onclick="save()"/>
+
+          </form>
+
+                                               </div>
+
+      </div>
+
+    ]]>
+
+    </Content>
+
+</Module>
