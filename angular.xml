@@ -2,7 +2,7 @@
 
 <Module>
 
-    <ModulePrefs title="HR Survey" height="600">
+    <ModulePrefs title="AngularJS Sample" height="600">
 
         <Require feature="osapi"/>
 
