@@ -2,7 +2,7 @@
 
 <Module>
 
-  <ModulePrefs title="Internal Jobs" height="400">
+  <ModulePrefs title="Internal Jobs">
 
     <Require feature="osapi"/>
 
@@ -54,7 +54,7 @@
 
       </script>
 
-      <iframe src="https://www.sap.com/careers/index.html"></iframe>
+      <iframe src="https://www.sap.com/careers/index.html" width=100%></iframe>
 
 
       
