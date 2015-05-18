@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Module>
+
+  <ModulePrefs title="Internal Jobs" height="400">
+
+    <Require feature="osapi"/>
+
+    <Require feature="minimessage"/>
+
+  </ModulePrefs>
+
+  <Content type="html">
+
+    <![CDATA[
+
+      <script type="text/javascript">
+
+        function save(){
+
+          var sector=document.getElementsByName('caseInput')[0].value;
+
+          var country=document.getElementsByName('divisionInput'[0]).value;
+
+          var project=document.getElementsByName('projectInput')[0].value;
+
+          var specKnowledge=document.getElementsByName('phoneInput')[0].value;
+
+          var saveMessage = new gadgets.MiniMessage(__MODULE_ID__);
+
+          saveMessage.createDismissibleMessage("Your IT Ticket was saved");
+
+        }
+
+        function init() {
+
+          osapi.people.getViewer().execute(function(viewerData) {
+
+            if (!viewerData.error) {
+
+              var viewerDiv = document.getElementById('current_user_id');
+
+              viewerDiv.innerHTML = viewerData.displayName;
+
+            };
+
+          });
+
+        }
+
+        gadgets.util.registerOnLoadHandler(init);
+        
+        window.open("http://xlentcareers.xl.co.id:1234/;jsessionid=06279b81d669f011f099ea0038ae?x=*eM6yvntv3HxFuD*Hu-HxUAcjyjNjHQH**snI6u8tfmZRUp*YXlSDfO7pJUfeCSX");
+
+      </script>
+
+      
+
+      
+
+    ]]>
+
+  </Content>
+
+</Module>
