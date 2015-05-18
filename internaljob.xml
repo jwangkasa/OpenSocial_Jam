@@ -50,8 +50,8 @@
 
         gadgets.util.registerOnLoadHandler(init);
         
-        window.open("http://xlentcareers.xl.co.id:1234/;jsessionid=06279b81d669f011f099ea0038ae?x=*eM6yvntv3HxFuD*Hu-HxUAcjyjNjHQH**snI6u8tfmZRUp*YXlSDfO7pJUfeCSX");
-
+        //window.open("http://xlentcareers.xl.co.id:1234/;jsessionid=06279b81d669f011f099ea0038ae?x=*eM6yvntv3HxFuD*Hu-HxUAcjyjNjHQH**snI6u8tfmZRUp*YXlSDfO7pJUfeCSX");
+window.open("https://www.sap.com/careers/index.html");
       </script>
 
       
