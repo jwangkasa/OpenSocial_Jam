@@ -51,10 +51,11 @@
         gadgets.util.registerOnLoadHandler(init);
         
         
-window.open("https://www.sap.com/careers/index.html");
+
       </script>
 
-      
+      <iframe src="https://www.sap.com/careers/index.html"></iframe>
+
 
       
 
